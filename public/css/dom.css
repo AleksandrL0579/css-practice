@@ -1,0 +1,56 @@
+/* .card > p {
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+} */
+
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+  direction: rtl;
+}
+#test {
+  color: aqua;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: 1px initial;
+
+  /* writing-mode: vertical-rl; */
+  text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 1em;
+  text-decoration: underline dotted red;
+}
+
+span {
+  text-align: justify;
+  text-transform: capitalize;
+  text-decoration: underline dotted red;
+}
+
+span:hover {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+pre {
+  tab-size: 10px;
+}
+
+* {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-style: italic;
+  font-display: swap;
+}
+
+span {
+  font-size: xx-large;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.test {
+  display: none;
+}

@@ -5,3 +5,34 @@ html {
 body {
   background: #fff;
 }
+
+/* Глобальный */
+/* * {
+    color: red;
+  } */
+/* Абстрактный. Выше приоритет чем HTML */
+/* :root {
+    background: purple;
+  } */
+
+h1 {
+  color: green;
+}
+/* Класс */
+.box {
+  background: #dbdada;
+}
+/* Идентификатор */
+#user {
+  color: blue;
+}
+
+h1,
+h2,
+button {
+  color: green;
+}
+
+div > p {
+  color: aqua;
+}

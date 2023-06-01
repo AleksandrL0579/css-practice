@@ -1,0 +1,27 @@
+span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+/* p {
+  text-emphasis-style: filled;
+  text-emphasis-position: under right;
+  text-emphasis-color: blue;
+  writing-mode: ;
+  text-orientation: sideways;
+}
+
+#test {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+} */
+
+pre {
+  /* font-variant-caps: all-small-caps; */
+  font-synthesis: style;
+  /* text-align-last: justify; */
+}
+
+h5 {
+  font-variant-numeric: diagonal-fractions;
+}
