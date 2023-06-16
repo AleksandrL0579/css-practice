@@ -54,3 +54,54 @@ span {
 .test {
   display: none;
 }
+
+/* ============================= */
+
+.colum {
+  columns: 3;
+  /* column-width: 220px;
+  column-rule: thick inset blue;
+  column-gap: 20px;
+  column-rule: dotted;
+  column-span: all;
+  column-fill: auto;
+  break-before: page; */
+  box-decoration-break: slice;
+  -webkit-box-decoration-break: clone;
+  box-shadow: 8px 8px 10px 0 #ff1492, -5px -5px 5px 0 #00f,
+    5px 5px 15px 0 #ff0;
+  /* background-image: url('/img/test-2.jpg'); */
+}
+
+.table tr td {
+  border: 1px solid #343a40;
+  border-bottom-color: red;
+  border-right-color: blue;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: slice;
+  box-shadow: 8px 8px 10px 0 #ff1492, -5px -5px 5px 0 #00f,
+    5px 5px 15px 0 #ff0;
+}
+
+/* .table {
+  table-layout: fixed;
+  width: 600px;
+
+  border-collapse: unset;
+  border-spacing: 10px 20px;
+
+  caption-side: top;
+
+  empty-cells: hide;
+} */
+/* .calc {
+  width: 600px;
+  margin-right: calc(50% - (600px / 2));
+} */
+img {
+  width: 400px;
+  height: 200px;
+  mix-blend-mode: hard-light;
+  border: 10px solid green;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
