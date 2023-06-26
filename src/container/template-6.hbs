@@ -12,25 +12,20 @@
 
 
 <main class="main">
-    {{#with messages}}
-    <div class="messages">
-        <h1 class="messages_title">{{title}}</h1>
-        {{#each list}}
-        <div class="msg">
-            <strong class="msg_name">{{name}}</strong>
-            <p class="msg_text">{{message}}</p>
-            <span class="msg_day">{{day}}</span>
+
+
+    {{#with info}}
+    <div class="info">
+        <div class="info_content">
+            <h1 class="info_title">{{title}}</h1>
+            <p class="info_text">{{description}}</p>
         </div>
-        {{/each}}
-
-
-        <a href="#" class="messeges_link">All messages</a>
     </div>
     {{/with}}
 
+
     {{#with form}}
     <form class="form">
-        <h2 class="form_title">{{title}}</h2>
         <div class="form_input_list">
             {{#each inputs}}
             <input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}"
@@ -42,26 +37,51 @@
             <div></div>
             <label for="{{checkbox.name}}">{{checkbox.label}}</label>
         </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> d5bbf6f0411d095bc5af958495e4900f62f78883
         <button type="submit" class="form_button">{{button}}</button>
+        <div class="fofm_line"> </div>
         <p class="form_info">{{info}}</p>
     </form>
     {{/with}}
 
 </main>
 
-<div class="advantages">
-    {{#each advantages}}
-    <div>
-        <strong>{{title}}</strong>
-        <p>{{text}}</p>
+{{#with updates}}
+<div class="messages">
+    <h1 class="messages_title">{{title}}</h1>
+    {{#each list}}
+    <div class="msg">
+
+        <div class="msg_square">32x32</div>
+        <div class="msg_media">
+            <strong class="msg_name msg_name_{{nickname}}">{{nickname}}</strong>
+            <p class="msg_text">{{description}}</p>
+            <div class="fofm_line"> </div>
+        </div>
+
     </div>
     {{/each}}
+    <a href="{{show_all.url}}" class="messeges_link">{{show_all.text}}</a>
 </div>
+{{/with}}
 
+
+<div class="expirience_one">
+    {{#with expirience}}
+    <span class="badge_hot">{{badge}}</span>
+
+    <h1 class="expirience_title">{{title}}</h1>
+
+
+    <div class="advantages">
+        {{#each list}}
+        <div>
+            <strong>{{name}}</strong>
+            <p>{{details}}</p>
+        </div>
+        {{/each}}
+    </div>
+    {{/with}}
+</div>
 <footer class="footer" id="test">
     <div>
         {{>logo}}

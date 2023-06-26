@@ -33,7 +33,10 @@
   display: flex;
   justify-content: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> d5bbf6f0411d095bc5af958495e4900f62f78883
 .page_content {
   max-width: var(--page-width);
   max-width: 960px;
@@ -122,9 +125,13 @@
 
   font-weight: var(--weight-title);
 }
+<<<<<<< HEAD
 
 /* ================================================= */
 
+=======
+/* ================================================= */
+>>>>>>> d5bbf6f0411d095bc5af958495e4900f62f78883
 .main {
   display: flex;
   width: 100%;
