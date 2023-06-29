@@ -1,0 +1,83 @@
+{{#with header}}
+<header class="header">
+    <div>
+        <div class="logo">
+            <span class="badge text-bg-primary">Logo</span>
+        </div>
+    </div>
+    <nav class="header_nav">
+        <div class="header_nav_right">
+            <div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
+                {{#each links}}
+                <a href="{{url}}" class="nav_link">{{text}}</a>
+                {{/each}}
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="ad">
+    <span class="ad_logo">AD</span>
+    <a href="{{ad.url}}" class="ad_link">{{ad.text}}</a>
+    <p class="user_link">{{brandName}} {{userOnline}}</p>
+</div>
+{{/with}}
+
+
+<section class="hero_block">
+    <div class="hero">
+        {{#with hero}}
+        <div class="hero_content">
+            <h1 class="hero_title">{{title}}</h1>
+            <p class="hero_text">{{description}}</p>
+        </div>
+        {{!-- {{>hero title=title text=text}} --}}
+        <a class="button" href="{{button.url}}">{{button.text}}</a>
+        {{/with}}
+    </div>
+</section>
+
+
+
+<section class="about_block">
+    <div class="about">
+        <h4 class="about_title">{{about.heading}}</h4>
+        <p class="about_text">{{about.info}}</p>
+    </div>
+</section>
+
+
+<div class="articles_title">
+    <h2 class="articles_our">Our Articles</h2>
+    <p class="articles_viev">View All</p>
+</div>
+
+<main class="articles">
+
+    {{#each articles}}
+
+    <div class="card">
+
+        <div class="card_image" style="background-image: url({{photo}})">
+            <div class="card_isNew">{{isNew}}</div>
+        </div>
+        <h2 class="card_title">{{name}}</h2>
+        <p class="card_text">{{description}}</p>
+        <a href="{{linkUrl}}" class="card_button">Read All</a>
+    </div>
+
+    {{/each}}
+</main>
+
+{{#with footer}}
+<footer class="footer">
+    <div>
+        <span class="foter_title">{{title}}</span>
+        <div class="nav {{#if isVertical}}nav_vertical{{else}}nav_inline{{/if}}">
+            {{#each pages}}
+            <a href="{{path}}" class="nav_link">{{name}}</a>
+            {{/each}}
+            <span class="footer_copyright">{{copyright}}</span>
+        </div>
+    </div>
+</footer>
+{{/with}}
