@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+
+
 <head>
     <title>
         Slack page
@@ -17,7 +19,7 @@
     <link href='css/normalize.css' rel='stylesheet' />
 
 
-    <link href='css/slack.css' rel='stylesheet' />
+    <link href='css/slackHome.css' rel='stylesheet' />
 
     <meta name="viewport"
         content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -29,7 +31,7 @@
 <body>
 
     <div class="page">
-        <section class="page_section">
+        {{!-- <section class="page_section">
             <div class="page_content hero_section">
 
                 <div class="hero">
@@ -60,67 +62,10 @@
                 </div>
 
             </div>
-        </section>
+        </section> --}}
 
         <section class="page_section page_section_light">
             <div class="page_content features_section">
-                <h2 class="features_title">Work more easily with everyone</h2>
-                <p class="features_description double_line">Stay on the same page and make decisions faster by bringing
-                    all of your
-                    work communication into one place.</p>
-
-
-                <div class="features_grid_4">
-                    <div class="feat_card">
-                        <span class="icon feat_icon" style="background-image: url('/svg/feature/connect.svg') ;"></span>
-                        <strong>Slack Connect</strong>
-                        <p class="double_line">Collaborate with teams at other
-                            companies the same way you do
-                            with teams at your own.</p>
-                        <a href="#" class="icon icon_arrow click feat_link"></a>
-                    </div>
-                    <div class="feat_card">
-                        <span class="icon feat_icon"
-                            style="background-image: url('/svg/feature/Channels.svg') ;"></span>
-                        <strong class="feat_card_title">Channels</strong>
-                        <a href="#" class="icon icon_arrow click feat_link"></a>
-                    </div>
-                    <div class="feat_card">
-                        <span class="icon feat_icon" style="background-image: url('/svg/feature/Huddles.svg') ;"></span>
-                        <strong class="feat_card_title">Huddles</strong>
-                        <a href="#" class="icon icon_arrow click feat_link"></a>
-                    </div>
-                    <div class="feat_card">
-                        <span class="icon feat_icon" style="background-image: url('/svg/feature/Clips.svg') ;"></span>
-                        <strong class="feat_card_title">Clips</strong>
-                        <a href="#" class="icon icon_arrow click feat_link"></a>
-                    </div>
-                    <div class="feat_card">
-                        <span class="icon feat_icon" style="background-image: url('/svg/feature/Canvas.svg') ;"></span>
-                        <strong class="feat_card_title">Canvas</strong>
-                        <a href="#" class="icon icon_arrow click feat_link"></a>
-                    </div>
-                    <div class="feat_card">
-                        <span class="icon feat_icon"
-                            style="background-image: url('/svg/feature/Messaging.svg') ;"></span>
-                        <strong class="feat_card_title">Messaging</strong>
-                        <a href="#" class="icon icon_arrow click feat_link"></a>
-                    </div>
-                    <div class="feat_card">
-                        <span class="icon feat_icon"
-                            style="background-image: url('/svg/feature/Accessibility.svg') ;"></span>
-                        <strong class="feat_card_title">Accessibility</strong>
-                        <a href="#" class="icon icon_arrow click feat_link"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-        <section class="page_section page_section_light">
-            <div class="page_content features_section_kont">
                 <div class="page_kont">
                     <h2 class="features_title">What you need, when you need it</h2>
                     <p class="features_description double_line">Spend less time shuffling tabs with a comprehensive
@@ -129,8 +74,8 @@
                         all your work tools at your fingertips.</p>
                 </div>
 
-                <div class="features_grid_kont_4">
-                    <div class="feat_card_kont">
+                <div class="features_grid_4">
+                    <div class="feat_card">
                         <span class="icon feat_icon"
                             style="background-image: url('/img/brandsHome/Frame.svg') ;"></span>
                         <strong>Apps and Integrations</strong>
@@ -140,19 +85,19 @@
                             over 2,200 more.</p>
                         <a href="#" class="icon icon_arrow click feat_link"></a>
                     </div>
-                    <div class="feat_card_kont_2">
+                    <div class="feat_card">
                         <span class="icon feat_icon"
                             style="background-image: url('/img/brandsHome/Frame2.svg') ;"></span>
                         <strong class="feat_card_title">Search</strong>
                         <a href="#" class="icon icon_arrow click feat_link"></a>
                     </div>
-                    <div class="feat_card_kont_2">
+                    <div class="feat_card">
                         <span class="icon feat_icon"
                             style="background-image: url('/img/brandsHome/Frame.png') ;"></span>
                         <strong class="feat_card_title">File sharing</strong>
                         <a href="#" class="icon icon_arrow click feat_link"></a>
                     </div>
-                    <div class="feat_card_kont">
+                    <div class="feat_card">
                         <span class="icon feat_icon"
                             style="background-image: url('/img/brandsHome/Frame3.svg') ;"></span>
                         <strong class="feat_card_title">Workflow Builder</strong>
@@ -168,31 +113,23 @@
         </section>
 
 
-
-
-
-
         <section class="page_section">
-            <div class="deliveroo">
-                <img src="/img/deliveroo.png" alt="deliveroo" class="deliveroo_image">
-                <div class="deliveroo_content">
-                    <p class="deliveroo_info double_line">“The thing that keeps us connected
+            <div class="hero">
+                <img src="/img/deliveroo.png" alt="Hero" class="hero_image">
+                <div class="hero_content">
+                    <p class="hero_info double_line">“The thing that keeps us connected
                         the most is Slack. It’s a very
                         immediate and straightforward
                         method of communication, and
                         really the only channel that people
                         prefer and enjoy using.”</p>
-                    <span class="deliveroo_deliver"
+                    <span class="hero_deliver"
                         style="background-image: url('/img/brandsHome/deliveroo22.png') ;"></span>
-                    <span class="deliveroo_lable">Will Sprunt, CIO, Deliveroo</span>
+                    <span class="hero_lable">Will Sprunt, CIO, Deliveroo</span>
 
                 </div>
             </div>
         </section>
-
-
-
-
 
 
         <section class="working">
@@ -201,7 +138,7 @@
             </div>
 
             <main class="working_title">
-                <div class="features_grid_working_44">
+                <div class="features_grid_working_4">
                     <div class="feat_card_working">
                         <span class="feat_working"
                             style="background-image: url('/img/brandsHome/slack-101.png');"></span>
@@ -232,8 +169,6 @@
                 </div>
             </main>
         </section>
-
-
 
 
 
