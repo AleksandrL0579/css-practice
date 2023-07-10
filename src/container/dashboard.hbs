@@ -51,7 +51,7 @@
                     <span class="icon nav-button__icon" style="background-image: url('/svg/nav/produkts.svg');"></span>
                     <span class="text text--light">Products</span>
                 </a>
-                <div class="relative click">
+                {{!-- <div class="relative click">
                     <div class="field field--select">
                         <span class="text text--light">Choose...</span>
                     </div>
@@ -62,7 +62,7 @@
                         <option value="hanster">Hanster</option>
                     </select>
 
-                </div>
+                </div> --}}
             </nav>
         </aside>
 
@@ -80,13 +80,16 @@
 
                 </div>
                 <div class="icon--header--right">
-                    <span class=" icon__right icon--header--settings--right icon--button icon--color-yellow click"
-                        style="background-image: url('/svg/header/antenna.svg');"></span>
-
-                    <span class=" icon__right icon--header--settings--right--2 icon--button icon--color-sin click"
+                    {{!-- <div class="icon--header--settings--right"> --}}
+                        <span class="icon--header--settings--right icon--button  icon--color-yellow click icon__right"
+                            style="background-image: url('/svg/header/antenna.svg');"></span>
+                        {{!--
+                    </div> --}}
+                    <span class="icon--header--settings--center icon--button icon--color--sin  click icon__right"
                         style="background-image: url('/svg/header/material.svg');"></span>
 
-                    <span class=" icon__right icon--header--settings--right icon--button icon--color-yellow click"
+                    <span
+                        class=" icon__right icon--header--settings--right icon--button icon--color-yellow click icon__right"
                         style="background-image: url('/svg/header/tabler.svg');"></span>
                 </div>
             </div>
@@ -112,7 +115,7 @@
                     </div>
 
                     <div class="analitic analitic__double analitic--purpur">
-                        <span class=" icon analitic__button icon--button icon--color-blue click"
+                        <span class="icon__right icon analitic__button icon--button icon--color-purpure click"
                             style="background-image: url('/svg/analitic/money.svg');">
                         </span>
                         <div class="relative vertical vertical--small">
@@ -137,7 +140,7 @@
                     </div>
                     <div class="">
                         <div class="analitic__line analitic__line2 analitic analitic__double analitic--white">
-                            <span class=" icon analitic__button icon--button icon--color-yellow--light click"
+                            <span class="icon__right icon analitic__button icon--button icon--color-yellow--light click"
                                 style="background-image: url('/svg/analitic/shop.svg');">
                             </span>
                             <div class="analitic2__line relative vertical vertical--small">
@@ -153,48 +156,111 @@
 
             </div>
             <div class="checkout">
+                <div class="analitic1">
 
-                <div class="analitic analitic__double  analitic--blue">
-                    <div class="main--purchase">
-                        <span class="text text--light devider">Purchase list</span>
-                        <div>lllllll</div>
-                        <div>lllllll</div>
-                        <div>lllllll</div>
-                        <div>lllllll</div>
-                        <div>lllllll</div>
+                    <div class="analitic--white text">
+                        <span class="text devider__choose payment">Purchase list</span>
+                        <div class="main--purchase devider__choose">
+                            <div class="analitic__text">ID437661</div>
+                            <div>AirOn ProCam</div>
+                            <div>132.32 EUR</div>
+                            <div>Customer</div>
+                            <div class="analitic__text">May 11, 2023, 14:21</div>
+                            <div>7/8 USB Type-C</div>
+                            <div class="not__paid">Not paid</div>
+                            <div>robin@com.de</div>
+                        </div>
+                        <div class="main--purchase text">
+                            <div>ID437661</div>
+                            <div>PHILIPS Essential</div>
+                            <div>543 USD</div>
+                            <div>Customer</div>
+                            <div>May 11, 2023, 14:21</div>
+                            <div>HD9200/90</div>
+                            <div class="pay__by__Stripe">Pay by Stripe</div>
+                            <div>dima@com.ua</div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="analitic analitic__double analitic--purpur">
-                    <div class="main--payment">
-                        <span class="text text--light devider">Payment</span>
-                        <div class="devider text">Payment</div>
-                        <div class="field field--select">
-                            <span class="text text--light">Choose...</span>
+                <div class="analitic2">
+                    <div class="analitic--white text">
+                        <span class="text payment devider__choose">Payment</span>
+                        <div class="control">
+                            <label class="form-control">
+                                <input type="radio" name="radio" value="#" checked />
+                                Credit card
+                                <input type="radio" name="radio" />
+                                Debit card
+                                <input type="radio" name="radio" />
+                                PayPal
+                            </label>
                         </div>
-                        <div class="relative click">
-                            <div class="field field--select">
-                                <span class="text text--light">Choose...</span>
+
+                        <div class="main--payment devider__choose">
+                            <div class="text-field">
+                                <label class="text-field__label" for="login">Name on card</label>
+                                <input class="text-field__input" type="text" name="login" id="login" placeholder="Login"
+                                    value=" ">
                             </div>
-                            <select class="field__select">
-                                <option value="dog">Dog</option>
-                                <option value="cat">Cat</option>
-                                <option value="spider">Spider</option>
-                                <option value="hanster">Hanster</option>
-                            </select>
-                            <span class=" icon icon--header--settings icon--button click"
-                                style="background-image: url('/svg/analitic/assets.svg');">
-                            </span>
+                            <div class="text-field">
+                                <label class="text-field__label" for="login">Credit card number</label>
+                                <input class="text-field__input" type="text" name="login" id="login" placeholder="Login"
+                                    value=" ">
+                            </div>
+                            <div class="text-field">
+                                <label class="text-field__label" for="login">Expiration</label>
+                                <input class="text-field__input" type="text" name="login" id="login" placeholder="Login"
+                                    value=" ">
+                            </div>
+                            <div class="text-field">
+                                <label class="text-field__label" for="login">CVV</label>
+                                <input class="text-field__input" type="text" name="login" id="login" placeholder="Login"
+                                    value=" ">
+                            </div>
                         </div>
-                        <div class="devider">kkkkkk</div>
-                        <div>kkkkkk</div>
-                        <div>kkkkkk</div>
-                        <div>kkkkkk</div>
-                        <div>kkkkkk</div>
+
+
+                        <div class="main--payment devider__choose">
+                            <div class="relative click">
+                                <div class="text-field">
+                                    <label class="text-field__label" for="login">Country</label>
+                                    <input class="text-field__input" type="text" name="login" id="login"
+                                        placeholder="Login" value="Choose...">
+                                </div>
+                                <span class=" icon icon--header--settings icon--button click"
+                                    style="background-image: url('/svg/analitic/assets.svg');">
+                                    <select class="field__select">
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="spider">Spider</option>
+                                        <option value="hanster">Hanster</option>
+                                    </select>
+                                </span>
+                            </div>
+                            <div class="relative click">
+                                <div class="text-field">
+                                    <label class="text-field__label" for="login">State</label>
+                                    <input class="text-field__input" type="text" name="login" id="login"
+                                        placeholder="Login" value="Choose...">
+                                </div>
+                                <span class=" icon icon--header--settings icon--button click"
+                                    style="background-image: url('/svg/analitic/assets.svg');">
+                                    <select class="field__select">
+                                        <option value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="spider">Spider</option>
+                                        <option value="hanster">Hanster</option>
+                                    </select>
+                                </span>
+                            </div>
+
+                        </div>
+                        <div>
+                            <button type="submit" class="form_button">Continue to checkout</button>
+                        </div>
                     </div>
                 </div>
 
-            </div>
 
         </main>
 
